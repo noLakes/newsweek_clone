@@ -2,6 +2,14 @@
   max-width: 1310px;
 }
 
+h1, h2, h3, h4, h5, a, nav {
+  font-family: sans-serif;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #page-heading {
   width: 100%;
   max-width: 395px;
@@ -11,5 +19,27 @@
 
 #nav-top {
   background-color: #ff0500;
-  padding: 20px 10px 15px 10px;
+  padding: 20px 25px 15px 25px;
+}
+
+#nav-top .nav-link {
+  color: white;
+  font-weight: 900;
+  margin-right: 15px;
+}
+
+#nav-top h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header .btn-primary {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 24px;
+  background-color: #ffe400;
+  height: 30px;
+  padding: 0px 12px;
 }
