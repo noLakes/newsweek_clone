@@ -117,7 +117,7 @@ body {
   font-size: 24px;
 }
 
-.full h3 a:hover {
+.full h3 a:hover, .wide-short h4 a:hover {
   text-decoration: #f72210 underline;
 }
 
@@ -125,4 +125,51 @@ body {
   font-size: 15px;
   color: #333;
   line-height: 20px;
+}
+
+.partial {
+  padding-bottom: 20px;
+}
+
+.partial h4 {
+  line-height: 19px;
+  padding-top: 5px;
+}
+
+.partial h4 a {
+  color: #818181;
+  font-weight: 650;
+  font-size: 17px;
+}
+
+.partial h4 a:hover {
+  text-decoration: none;
+}
+
+.mini {
+  padding: 0px 10px;
+}
+
+.wide-short {
+  padding: 14px 0px;
+  margin-bottom: 14px;
+  border-top: 1px solid #cbcccea1;
+}
+
+.wide-short .img-fluid {
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  float: left;
+  margin-right: 14px;
+}
+
+.wide-short h4 {
+  line-height: 18px;
+}
+
+.wide-short h4 a {
+  color: black;
+  font-weight: 650;
+  font-size: 18px;
 }
