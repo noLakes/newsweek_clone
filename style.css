@@ -32,6 +32,7 @@ body {
 #nav-top {
   background-color: #ff0500;
   padding: 20px 25px 15px 25px;
+  align-items: flex-end;
 }
 
 .primary-links {
@@ -71,18 +72,15 @@ body {
   color: white;
 }
 
-#nav-top .nav-link:last-child {
-  color: black;
-  background-color: #ffe400;
-  border: 1px solid black;
-  border-radius: 24px;
-}
-
 #nav-top h4 {
   color: white;
   font-size: 18px;
   font-weight: 500;
   margin-right: 85px;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .header .btn-primary {
@@ -172,4 +170,41 @@ body {
   color: black;
   font-weight: 650;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 993px) {
+  .primary-links, .trending-links, #nav-top h4 {
+    display: none;
+  }
+
+  #nav-top {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  #nav-top nav {
+    align-items: flex-start;
+  }
+
+  #nav-top .nav-link {
+    padding: 0px 15px;
+  }
+
+  #page-heading {
+    width: 100%;
+    max-width: 130px;
+    max-height: 20px;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  
 }
