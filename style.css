@@ -115,7 +115,7 @@ body {
   font-size: 24px;
 }
 
-.full h3 a:hover, .wide-short h4 a:hover {
+.full h3 a:hover, .wide-short a:hover, .mag-story a:hover {
   text-decoration: #f72210 underline;
 }
 
@@ -148,7 +148,7 @@ body {
   padding: 0px 10px;
 }
 
-.wide-short {
+.wide-short, .opinion-piece {
   padding: 14px 0px;
   margin-bottom: 14px;
   border-top: 1px solid #cbcccea1;
@@ -162,14 +162,70 @@ body {
   margin-right: 14px;
 }
 
-.wide-short h4 {
+.opinion-piece .img-fluid {
+  width: 63px;
+  height: 63px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  float: left;
+  margin-right: 14px;
+}
+
+.opinion-piece:nth-child(3) .img-fluid {
+  float: right;
+}
+
+.opinion-piece:nth-child(2) {
+  border-top: 4px double  #cbccced2;
+}
+
+.opinion-piece:nth-child(3) {
+  border-bottom: 4px double #cbccced2;
+}
+
+.author-tag {
+  font-size: 13px;
+  color: #89898d;
+}
+
+.wide-short h4, .opinion-piece h4 {
   line-height: 18px;
 }
 
-.wide-short h4 a {
+.wide-short h4 a, .opinion-piece h4 a {
   color: black;
   font-weight: 650;
   font-size: 18px;
+}
+
+.mag-story h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.mag-story a {
+  color: black;
+  font-weight: 600;
+}
+
+.mag-story {
+}
+
+.mag-story .img-fluid {
+}
+
+.mag-cat-1, .mag-cat-2 {
+  padding: 0px 7px;
+  font-weight: 550;
+  color: white;
+  background-color: #f72210;
+  margin-top: 7px;
+  font-size: 17px;
+}
+
+.mag-cat-2 {
+  color: #f72210;
+  background-color: white;
 }
 
 @media only screen and (max-width: 993px) {
@@ -207,4 +263,7 @@ body {
 
 @media only screen and (max-width: 769px) {
   
+  #nav-top .nav-link {
+    font-size: 13px;
+  }
 }
