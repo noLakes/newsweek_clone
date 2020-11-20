@@ -93,11 +93,21 @@ body {
   padding: 0px 12px;
 }
 
-.section-heading {
+.section-heading, .section-heading-full {
   text-transform: uppercase;
   color: #949498f3;
   font-size: 16px;
   font-weight: 600;
+}
+
+.section-heading-full {
+  display: flex;
+  color: #333333;
+  font-size: 18px;
+  justify-content: center;
+  padding-bottom: 8px;
+  margin: 16px 0px;
+  border-bottom: 1px solid #cbccced2;
 }
 
 .full {
@@ -209,9 +219,13 @@ body {
 }
 
 .mag-story {
+  height: fit-content;
 }
 
 .mag-story .img-fluid {
+  min-height: 167px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mag-cat-1, .mag-cat-2 {
@@ -228,6 +242,23 @@ body {
   background-color: white;
 }
 
+.multi .wide-short:first-child {
+  border-top: none;
+}
+
+.multi .section-heading-full {
+  border-top: 1px solid #cbccced2;
+  border-bottom: none;
+  justify-content: start;
+  padding: 16px 0px 0px 0px;
+  color:  #f72210;
+}
+
+.multi .wide-short .img-fluid {
+  width: 110px;
+  height: auto;
+}
+
 @media only screen and (max-width: 993px) {
   .primary-links, .trending-links, #nav-top h4 {
     display: none;
@@ -235,6 +266,7 @@ body {
 
   #nav-top {
     position: fixed;
+    top: 0;
     height: 50px;
     width: 100%;
     z-index: 1;
@@ -265,5 +297,9 @@ body {
   
   #nav-top .nav-link {
     font-size: 13px;
+  }
+
+  .mag-story .img-fluid {
+    min-height: 280px;
   }
 }
