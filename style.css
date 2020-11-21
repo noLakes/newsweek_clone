@@ -146,12 +146,14 @@ body {
 
 .partial h4 a {
   color: #818181;
-  font-weight: 650;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #949494;
 }
 
 .partial h4 a:hover {
   text-decoration: none;
+  color: #878686;
 }
 
 .mini {
@@ -264,7 +266,7 @@ body {
 }
 
 .page-bottom {
-  padding: 20px 30px 0px 30px;
+  padding: 20px 30px 30px 30px;
   border-top: 1px solid #e1e1e1ba;
 }
 
@@ -284,7 +286,7 @@ body {
 .footer-links {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  padding-top: 4px;
 }
 
 .footer-links ul {
